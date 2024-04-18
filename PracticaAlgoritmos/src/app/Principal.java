@@ -9,7 +9,8 @@ public class Principal {
 		// llamado “numeros” con 5 números aleatorios del 1 al 10.
         int[] numeros = new int[5];
         for (int i = 0; i < numeros.length; i++) {
-            numeros[i] = (int) (Math.random() * 10) + 1;
+            numeros[i] = (int) (Math.random() * 10) + 1;    
+            
         }
 				
         // Calcula mediante un bucle el número de fibonacci de los 5 números del array
@@ -24,6 +25,7 @@ public class Principal {
         int[] resultadoFactorial = new int[numeros.length];
         for (int i = 0; i < numeros.length; i++) {
             resultadoFactorial[i] = Algoritmos.factorial(numeros[i]);
+            
         }
 
         // Comprueba mediante un bucle si los 5 números del array son primos o no y 
@@ -31,6 +33,11 @@ public class Principal {
         boolean[] resultadoPrimos = new boolean[numeros.length];
         for (int i = 0; i < numeros.length; i++) {
             resultadoPrimos[i] = Algoritmos.primo(numeros[i]);
+        }
+        
+        int[] resultadoFactoria2l = new int[numeros.length];
+        for (int i = 0; i < numeros.length; i++) {
+            resultadoFactorial[i] = Algoritmos.factorial(numeros[i]);
         }
 
        
